@@ -4,6 +4,6 @@ var skillkCtrl = require('../controllers/skills');
 
 
 router.get('/', skillkCtrl.index);
-router.get('/:id', skillkCtrl.show);
+router.get('/skills/:id', skillkCtrl.show);
 
 module.exports = router;

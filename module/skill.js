@@ -11,10 +11,10 @@ const skills = [
 
 module.exports = {
     getAll,
-    skillOne
+    getOne
 };
 
-function skillOne(id) {
+function getOne(id) {
     return skills[id];
 };
 

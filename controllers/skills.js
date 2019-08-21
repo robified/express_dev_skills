@@ -7,7 +7,7 @@ module.exports = {
 
 function show(req, res) {
     res.render('skills/show', {
-        skill: SkillOne(req.params.id),
+        skills: Skill.getOne(req.params.id),
         skillNum: parseInt(req.params.id) + 1
     });
 };
