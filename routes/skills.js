@@ -1,9 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var skillkCtrl = require('../controllers/skills');
+var skillsCtrl = require('../controllers/skills');
 
 
-router.get('/', skillkCtrl.index);
-router.get('/skills/:id', skillkCtrl.show);
+router.get('/', skillsCtrl.index);
+router.get('/skills/new', skillsCtrl.new);
+router.get('/skills/:id', skillsCtrl.show);
+
+router.post('/', skillsCtrl.create);
+router.delete('/skills/:id', skillsCtrl.delete);
 
 module.exports = router;
